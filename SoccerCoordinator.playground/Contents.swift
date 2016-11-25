@@ -1,7 +1,3 @@
-//: Playground - noun: a place where people can play
-// Basics, Control Flow, Functions
-
-
 import UIKit
 
 
@@ -66,18 +62,11 @@ var teammateGuardianNames: [String: String] = [
     "Herschel Krustofski": "Hyman and Rachel Krustofski"
 ]
 var teammates: [String] = ["Joe Smith", "Jill Tanner", "Bill Bon", "Eva Gordon", "Matt Gill", "Kimmy Stein", "Sammy Adams", "Karl Saygan", "Suzane Greenberg", "Sal Dali", "Joe Kavalier", "Ben Finkelstein", "Diego Soto", "Chloe Alaska", "Arnold Willis", "Phillip Helm", "Les Clay", "Herschel Krustofski"]
-
 var expierencedPlayers: [String] = []
 var nonExpierencedPlayers: [String] = []
 var raptors: [String] = []
 var dragons: [String] = []
 var sharks: [String] = []
-
-
-
-
-
-
 for teammate in teammates {
     if teammateExpierences[teammate] == true {
         expierencedPlayers.append("" + teammate)
@@ -85,12 +74,6 @@ for teammate in teammates {
         nonExpierencedPlayers.append("\(teammate)")
     }
 }
-
-
-
-
-
-
 var counter = 0
 while (counter < expierencedPlayers.count/3) {
     raptors.append(expierencedPlayers[counter])
@@ -118,14 +101,6 @@ while (counter < nonExpierencedPlayers.count/3 + nonExpierencedPlayers.count/3 +
     sharks.append(nonExpierencedPlayers[counter])
     counter += 1
 }
-
-
-
-
-
-
-
-// Creates letters and appends to array letters
 for raptor in raptors {
     print("Your kid's name is: \(raptor), their team's name is the Raptors, their guardian's name is " + teammateGuardianNames[raptor]! + " and their first practice date is March 18th at 1pm")
 }
